@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta content="IE=edge" http-equiv="X-UA-Compatible" />
+  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+  <title>Document</title>
+  <link href="layout.css" rel="stylesheet" />
+
+  <script src="./main.ts" type="module"></script>
+</head>
+
+<body>
+  <header>
+    <h1>Contact</h1>
+    <label for="dark-mode" class="dark-mode-toggle">
+      <input type="checkbox" id="dark-mode" class="dark-mode" />
+      <i class="fa fa-sun light"></i>
+      <i class="fa fa-moon dark"></i>
+    </label>
+  </header>
+
+  <section>
+    <ul>
+      <li>
+        <a href="/" title="Home"><i class="fa-solid fa-home"></i> <span>Home</span></a>
+      </li>
+      <li>
+        <a href="/" title="Dashboard"><i class="fa-solid fa-dashboard"></i> <span>Dashboard</span></a>
+      </li>
+      <li>
+        <a href="/" title="Profile"><i class="fa-solid fa-user"></i> <span>Profile</span></a>
+      </li>
+      <li>
+        <a href="./contact.html" title="Contact"><i class="fa-solid fa-message"></i> <span>Contact</span></a>
+      </li>
+    </ul>
+  </section>
+
+  <main class="form">
+    <item>
+      <question> Name </question>
+      <textarea id="name" rows="1" placeholder="John Doe" style="resize:none"></textarea>
+    </item>
+    <item>
+      <question> Email address </question>
+      <textarea id="email" rows="1" placeholder="john.doe@example.com" style="resize:none"></textarea>
+    </item>
+    <item>
+      <question> Birthday </question>
+      <input id="birthday" rows="1" type="date"></input>
+    </item>
+    <item>
+      <question> How much do you like going overboard on unnecessary details? </question>
+      <item_answer>
+        <input type="radio" id="not-enough" name="details" value="not enough">
+        <label for="not-enough">Not enough</label> <br>
+        <input type="radio" id="just-enough" name="details" value="just enough">
+        <label for="just-enough">Just enough (too much)</label> <br>
+        <input type="radio" id="too-much" name="details" value="too much">
+        <label for="too-much">Too much</label> <br>
+      </item_answer>
+    </item>
+    <item>
+      <question> Feedback </question>
+      <textarea id="feedback" rows="5"
+        placeholder="Doesn't matter, because this website doesn't even work and it won't be saved"></textarea>
+    </item>
+    <item>
+      <input type="checkbox" id="money" name="consent" value="consent">
+      <label for="money">I consent to the processing of my data, even though I know it will be misused</label>
+    </item>
+    <item>
+      <button id="send"> Send </button>
+      <button id="reset"> Reset </button>
+    </item>
+  </main>
+
+  <footer>
+    <div>Made with <i class="fa-solid fa-heart"></i> by David Sichau</div>
+  </footer>
+</body>
+
+</html>
